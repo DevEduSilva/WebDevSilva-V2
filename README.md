@@ -22,6 +22,7 @@ O projeto reflete minha identidade como desenvolvedor Front-End, apresentando pr
 - FontAwesome 
 - CSS3 
 - JavaScript 
+- SwiperJS
 
 ## Estrutura do Projeto
 
