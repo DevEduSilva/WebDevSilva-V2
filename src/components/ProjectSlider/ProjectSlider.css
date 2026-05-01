@@ -1,0 +1,250 @@
+/* ======================================================================== 
+PROJETOS                                       
+ ======================================================================== */
+
+.slider-section {
+  padding: 12vh 0;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.slider-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btnClass2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.projetos-subtitle {
+  color: #b0b0b0;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 300;
+}
+
+.card-projeto {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 300px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-projeto:hover {
+  transform: translateY(-12px) scale(0.9);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card-projeto:nth-child(1) {
+  border-color: rgba(50, 255, 126, 0.1);
+}
+
+.card-projeto:nth-child(1):hover {
+  border-color: rgba(50, 255, 126, 0.5);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(50, 255, 126, 0.2);
+}
+
+.card-projeto:nth-child(1) .links-container a {
+  color: #32ff7e;
+}
+
+.card-projeto:nth-child(2) {
+  border-color: rgba(255, 121, 121, 0.1);
+}
+
+.card-projeto:nth-child(2):hover {
+  border-color: rgba(255, 121, 121, 0.5);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 121, 121, 0.2);
+}
+
+.card-projeto:nth-child(2) .links-container a {
+  color: #ff7979;
+}
+
+.card-projeto:nth-child(3) {
+  border-color: rgba(255, 203, 5, 0.1);
+}
+
+.card-projeto:nth-child(3):hover {
+  border-color: rgba(255, 203, 5, 0.5);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 203, 5, 0.2);
+}
+
+.card-projeto:nth-child(3) .links-container a {
+  color: #ffcb05;
+}
+
+.hover-content h1 {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: #ffffff;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.hover-content p {
+  color: #cccccc;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  line-height: 1.6;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* ========================================================================
+ LINKS DOS PROJETOS (REPOSITÓRIO E DEPLOY)                               
+ ======================================================================== */
+
+.links-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.links-container a {
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.links-container a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.links-container a:hover {
+  color: #ffffff !important;
+}
+
+.links-container a:hover::after {
+  width: 100%;
+}
+
+.divider {
+  color: #444;
+  font-size: 0.8rem;
+}
+
+/* ======================================================================== 
+PERSONALIZAÇÃO DO SWIPERJS                            
+ ======================================================================== */
+
+:root {
+  --swiper-theme-color: #ffffff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem !important;
+  font-weight: bold;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 40px;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3) !important;
+  width: 10px !important;
+  height: 10px !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  width: 25px !important;
+  border-radius: 10px !important;
+}
+
+/* ============================ MEDIA QUERIES ============================ */
+
+@media (max-width: 480px) {
+  .card-projeto {
+    height: 350px;
+    padding: 25px;
+  }
+
+  .links-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-section {
+    padding: 8vh 0;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1367px) {
+  .card-projeto {
+    height: 420px;
+  }
+}
