@@ -1,16 +1,57 @@
-# React + Vite
+# WebDevSilva 2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O **WebDevSilva 2.0** é a segunda versão da minha página pessoal, projetada com foco em **Branding Pessoal**. Esta Landing Page foi reconstruída para ser o meu cartão de visitas digital, utilizando **React.js** e **Vite**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O projeto reflete minha identidade como desenvolvedor Front-End, apresentando projetos, formação acadêmica e canais de contato de forma direta e elegante.
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Otimização para Performance:** Build otimizado com Vite, garantindo tempos de carregamento reduzidos e execução fluida.
+- **Interface Minimalista:** Design focado em legibilidade, utilizando paletas de cores equilibradas e tipografia moderna.
+- **Arquitetura Reativa:** Componentização modular em React para fácil manutenção e escalabilidade do portfólio.
+- **Navegação de Seção Única:** Fluxo contínuo entre apresentação e projetos com scroll suave e ajuste de compensação para o header fixo.
+- **Botões de Call to Action (CTA):** Links estratégicos para GitHub, LinkedIn e currículo, com efeitos visuais de hover e active.
+- **Design Totalmente Responsivo:** Experiência adaptada para dispositivos móveis, tablets e desktops através de media queries rigorosas.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 
+- Vite
+- FontAwesome 
+- CSS3 
+- JavaScript 
+
+## Estrutura do Projeto
+
+```plaintext
+├── public/           
+│   └── assets/       
+├── src/
+│   ├── components/   # Header, Footer, Hero, Contact, etc.
+│   ├── pages/        
+│   ├── App.jsx       # Gerenciamento de componentes globais
+│   ├── index.css     
+│   └── main.jsx      
+└── index.html        
+```
+
+## Padrão de Commits
+
+Os nomes dos commits são compostos de 2 partes:
+
+1. **Type ou Categoria do Commit:**
+   - `feat`: Uma nova funcionalidade.
+   - `fix`: A correção de um bug.
+   - `perf`: Mudança de código focada em melhorar performance.
+   - `refactor`: Mudança de código que não adiciona uma funcionalidade e também não corrige um bug.
+   - `style`: Mudanças no código que não afetam seu significado (espaço em branco, formatação, ponto e vírgula, etc).
+
+2. **Descrição do que o Commit Faz:**
+   - Após o type, uma breve descrição da funcionalidade ou correção.
+
+### Exemplos
+
+- `feat: adicionar sistema de calculo`: Implementa a lógia de calculo.
+- `fix: corrigir bug de calculo`: Resolve um problema ao calcular itens.
